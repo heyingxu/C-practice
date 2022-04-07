@@ -97,6 +97,8 @@ bool DeleteList(LinkList L,int i)
     if(p == NULL)
         return false;
     LinkList q = p->next;
+    if(q == NULL)
+        return false;
     p->next = q->next;
     free(q);
     q=NULL;
