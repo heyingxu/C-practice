@@ -59,7 +59,7 @@ LinkList GetElem(LinkList L,int i)
 {
     int j = 1;
     LinkList p = L->next;
-    if(i==1)
+    if(i==0)
         return L;
     if(i < 1)
         return NULL;
